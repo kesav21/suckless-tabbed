@@ -3,7 +3,7 @@
 /* appearance */
 
 
-static const char font[]        = "Fira Mono:style=Regular:size=10";
+static const char font[]        = "FiraMono Nerd Font:style=Regular:size=12";
 
 static const char* normbgcolor  = "#282828";
 static const char* normfgcolor  = "#a89984";
