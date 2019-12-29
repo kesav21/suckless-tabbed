@@ -1,3 +1,5 @@
+// vim: set foldmethod=marker:
+
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -5,12 +7,25 @@
 
 static const char font[]        = "FiraMono Nerd Font:style=Regular:size=12";
 
-static const char* normbgcolor  = "#282828";
-static const char* normfgcolor  = "#a89984";
-static const char* selbgcolor   = "#a89984";
-static const char* selfgcolor   = "#282828";
-static const char* urgbgcolor   = "#282828";
-static const char* urgfgcolor   = "#cc241d";
+// colors {{{
+
+// colors/gruvbox {{{
+
+static const char col_foreground[] = "#ebdbb2";
+static const char col_background[] = "#282828";
+static const char col_color1[] = "#cc241d";
+static const char col_color6[] = "#689d6a";
+
+// }}}
+
+static const char* normbgcolor  = col_background;
+static const char* normfgcolor  = col_foreground;
+static const char* selbgcolor   = col_color6;
+static const char* selfgcolor   = col_background;
+static const char* urgbgcolor   = col_color1;
+static const char* urgfgcolor   = col_foreground;
+
+// }}}
 
 static const char before[]      = "<";
 static const char after[]       = ">";
