@@ -5,27 +5,19 @@
 /* appearance */
 
 
-static const char font[]        = "FiraMono Nerd Font:style=Regular:size=12";
-
-// colors {{{
-
-// colors/gruvbox {{{
+static const char font[]        = "FiraMono Nerd Font:style=Regular:size=10";
 
 static const char col_foreground[] = "#ebdbb2";
 static const char col_background[] = "#282828";
-static const char col_color1[] = "#cc241d";
-static const char col_color6[] = "#689d6a";
-
-// }}}
+static const char col_color1[]     = "#cc241d";
+static const char col_color7[]     = "#a89984";
 
 static const char* normbgcolor  = col_background;
 static const char* normfgcolor  = col_foreground;
-static const char* selbgcolor   = col_color6;
+static const char* selbgcolor   = col_color7;
 static const char* selfgcolor   = col_background;
 static const char* urgbgcolor   = col_color1;
 static const char* urgfgcolor   = col_foreground;
-
-// }}}
 
 static const char before[]      = "<";
 static const char after[]       = ">";
@@ -54,10 +46,10 @@ static Bool npisrelative  = False;
 
 #define MODKEY ControlMask
 static Key keys[] = {
-	/* { modifier     , key      , function  , argument  } */
-	{ MODKEY|ShiftMask, XK_Return, spawn     , { 0       } },
-	{ MODKEY          , XK_Tab   , rotate    , { .i = +1 } },
-	{ MODKEY|ShiftMask, XK_Tab   , rotate    , { .i = -1 } },
-	{ MODKEY          , XK_q     , killclient, { 0       } },
-	{ 0               , XK_F11   , fullscreen, { 0       } },
+	/* { modifier     , key      , function    , { arguments } } */
+	{ MODKEY, XK_Tab, rotate, { .i = +1   } },
+	{ MODKEY|ShiftMask, XK_Tab, rotate, { .i = -1   } },
+	{ MODKEY|ShiftMask,     XK_j,      movetab,     { .i = -1 } },
+	{ MODKEY|ShiftMask,     XK_k,      movetab,     { .i = +1 } },
+	{ 0, XK_F11, fullscreen, { 0         } },
 };
