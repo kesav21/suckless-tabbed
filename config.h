@@ -8,7 +8,7 @@
 static const char font[]        = "FiraCode Nerd Font:style=Regular:size=10";
 
 static const char col_foreground[] = "#ebdbb2";
-static const char col_background[] = "#282828";
+static const char col_background[] = "#1d2021";
 static const char col_color1[]     = "#cc241d";
 static const char col_color7[]     = "#a89984";
 
