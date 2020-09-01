@@ -5,7 +5,7 @@
 /* appearance */
 
 
-static const char font[]        = "FiraMono Nerd Font:style=Regular:size=10";
+static const char font[]        = "FiraCode Nerd Font:style=Regular:size=10";
 
 static const char col_foreground[] = "#ebdbb2";
 static const char col_background[] = "#282828";
