@@ -29,8 +29,8 @@ static int  newposition  = 0;
 static Bool npisrelative = False;
 
 static Key keys[] = {
-	{ ControlMask          , XK_Tab, rotate  , { .i = +1   } },
-	{ ControlMask|ShiftMask, XK_Tab, rotate  , { .i = -1   } },
-	{ ControlMask|ShiftMask, XK_j  , movetab , { .i = -1   } },
-	{ ControlMask|ShiftMask, XK_k  , movetab , { .i = +1   } },
+	{ 0,                     XK_Tab, rotate,  { .i = +1 } },
+	{ ShiftMask,             XK_Tab, rotate,  { .i = -1 } },
+	{ ControlMask,           XK_Tab, movetab, { .i = +1 } },
+	{ ControlMask|ShiftMask, XK_Tab, movetab, { .i = -1 } },
 };
