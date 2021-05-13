@@ -25,8 +25,8 @@ static       Bool urgentswitch = False;
  * then the current position is changed + newposition. If npisrelative
  * is False, then newposition is an absolute position.
  */
-static int  newposition  = 0;
-static Bool npisrelative = False;
+static int  newposition  = 1;
+static Bool npisrelative = True;
 
 static Key keys[] = {
 	{ 0,                     XK_Tab, rotate,  { .i = +1 } },
